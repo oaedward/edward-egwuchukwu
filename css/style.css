@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.09)
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    padding: 20px;
+    z-index: 10;
+    /* margin-bottom: 20px; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #welcome-section {
+        font-size: 50%;
+    }
+}
